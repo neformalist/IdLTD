@@ -1,0 +1,10 @@
+.pointer{
+    cursor: pointer;
+}
+.pointer:hover{
+    color: darkslateblue;
+}
+.right{
+    width: 100%;
+    text-align: right;
+}

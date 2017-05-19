@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 1.5em;
+}
+section{
+    clear: both;
+}
+.container-header{
+    padding: 2%;
+    overflow: hidden;
+}
+.phone{
+    font-size: 48px;
+    border: 5px solid darkblue;
+    border-radius: 50%;
+    padding: 10%;
+    color: darkblue
+}
+nav{
+    width: 100%;
+    background: orangered;
+    overflow: auto;
+    clear: right;
+}
+.menu-item{
+    padding-left: 200px;
+    width: 70%;
+}
+.menu-item li{
+    float: left;
+    margin-left: 5%;
+    list-style-type: none;
+}
+.menu-item li a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px;
+}
+.header-img{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    top:0;
+    right: 0;
+    width: 150px;
+    min-height: 100%;
+    display: block
+}
+.container-img{
+    border: 2px solid gainsboro;
+    margin: 2%;
+    float: left;
+    width: 18%;
+    text-align: center;
+}
+.container-img img{
+    min-width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+.img-small{
+    text-align: center;
+}
+.img-small img{
+    border: 2px solid gainsboro;
+    margin: 5px;
+    max-width: 100%;
+    min-width: 80px;
+    height: auto;
+}
+.title{
+    padding-top: 2%;
+    float: left;
+    width: 70%;
+    overflow: hidden;
+}
+.block-buy{
+    width: 75%;
+    float: left;
+    margin-top: 2%;
+    overflow: hidden;
+}
+.block-grey{
+    height: 60px;
+    background: gainsboro;
+    width: 80%;
+    float: left;
+    margin-top: 2%;
+    line-height: 60px;
+    color: orangered;
+    padding-left: 3%;
+}
+.button-buy{
+    float: right;
+    width: 20%;
+    height: 60px;
+    margin-top: 2%;
+    color: white;
+    background: darkblue;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+.parameters{
+    float: left;
+    padding: 3%;
+    width: 30%;
+}
+.parameters ul{
+    list-style-type: none;
+    margin-top: 5%;
+}
+.parameters ul li{
+    margin-top: 5%;
+}
+.description{
+    padding: 3%;
+    float: left;
+    width: 40%;
+}
+.description b {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.description p{
+    margin-top: 5%;
+}
+.full-parameters{
+    float: left;
+    width: 80%;
+    overflow: hidden;
+    margin: 2%;
+}
+.full-parameters-title{
+    margin: 2%;
+}
+.full-parameters{
+    width: 100%;
+}
+.full-parameters ul{
+    width: 45%;
+    float: left;
+}
+.full-parameters ul li{
+    padding: 1% 5%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.full-parameters ul li:after{
+    content:'';
+    display: block;;
+    overflow: hidden;
+    height: 14px;
+    border-bottom: 1px dashed black;
+}
+.full-parameters ul li .param-right{
+    float: right;
+    display: inline-block;
+    margin-left: 5px;
+}
+.full-parameters ul li .param-left{
+    float: left;
+    display: inline-block;
+    margin-right: 5px;
+}
+.info-1{
+    width: 45%;
+    float: left;
+    margin: 2%;
+}
+.info-1 ul{
+    margin: 5% 0 5% 10%;
+}
+.info-2{
+    width: 45%;
+    float: left;
+    margin: 2%;
+}
+.info-1 p,
+.info-2 p{
+    margin-bottom: 5%;
+    padding: 0 5%;
+}
+.review{
+    margin: 3% 2%;
+}
+.review p{
+    clear: both;
+}
+.name{
+    float: left;
+}
+.stars{
+    float: left;
+    margin: 0 5%;
+}
+.star{
+    width: 17px;
+    color: orangered;
+    margin: 0;
+    padding: 0;
+    line-height: 0.7;
+
+}
+.add-star{
+    overflow: hidden;
+    list-style-type: none;
+}
+.add-star li{
+    float: left;
+}
+
+.add-star li span{
+    margin: 0 10px;
+    vertical-align:top;
+}
+.reviews h3,
+.reviews input{
+    margin: 1% 2%;
+}
+.reviews textarea{
+    width: 90%;
+    border: 1px solid cornflowerblue;
+    height: 80px;
+    margin: 1% 5% 1% 2%;
+}
+.reviews button{
+    background: darkblue;
+    color: white;
+    margin: 0 2%;
+    padding: 1%;
+    border-radius: 5px;
+
+}
+
+@media all and (max-width: 1000px){
+    .header-main{
+        display: none;
+    }
+    .container-img,
+    .title,
+    .block-buy,
+    .description,
+    .parameters,
+    .full-parameters ul,
+    .info-1,
+    .info-2{
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .button-buy{
+        width: 30%;
+    }
+    .block-grey{
+        width: 70%;
+    }
+}
